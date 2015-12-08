@@ -1,0 +1,50 @@
+#header-sidebar {
+	float: left;
+}
+.navbar-header {
+	float: right;
+}
+#menu-primary {
+    float: left;
+}
+.header-widget .widget-header-content {
+	left: 1px;
+	right: auto;
+}
+.header-widget h2.header-widget-title i.glyphicon {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.home-shop-product-wrap-all {
+	float: right;
+}
+.home-shop-product-price {
+	right: auto;
+	left: 0;
+}
+.home-shop-product-price del,
+.home-shop-product-price ins {
+	text-align: left;
+}
+.home-shop-product-wrap .home-shop-product-title {
+    height: 42px;
+    margin-top: -10px;
+}
+#sidebar-secondary:after {
+    content: "";
+    position: absolute;
+    background: #F5E8E0;
+    width: 1000px;
+    top: 0;
+    left: 0;
+    right: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+
+	.main-navigation li {
+	    float: right;
+	}
+
+}
