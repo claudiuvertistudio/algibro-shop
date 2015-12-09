@@ -97,11 +97,15 @@
 
 							if(!empty($azera_shop_logo)):
 
-								echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand" title="'.get_bloginfo('title').'">';
+								echo '<div class="header-logo-wrap">';
 
-									echo '<img src="'.esc_url($azera_shop_logo).'" alt="'.get_bloginfo('title').'">';
+									echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand" title="'.get_bloginfo('title').'">';
 
-								echo '</a>';
+										echo '<img src="'.esc_url($azera_shop_logo).'" alt="'.get_bloginfo('title').'">';
+
+									echo '</a>';
+
+								echo '</div>';
 
 								echo '<div class="header-logo-wrap text-header azera_shop_only_customizer">';
 

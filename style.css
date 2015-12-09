@@ -3,11 +3,12 @@ Theme Name:     Algibro Shop
 Theme URI:      http://themeisle.com/
 Author:         ThemeIsle
 Author URI:     http://themeisle.com/
+Template:       azera-shop
 Description:    Algibro Shop is an elegant free WordPress child theme, perfect for building an online store. Algibro Shop is ecommerce (WooCommerce) Compatible, Easy Digital Downloads, WPML, RTL, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes.
 Version:        1.0.0
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:    azera-shop
+Text Domain:    algibro-shop
 Tags:           brown, red, gray, white, orange, light, responsive-layout, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, front-page-post-form, full-width-template, rtl-language-support, threaded-comments, translation-ready, accessibility-ready
 
 /* general
@@ -127,6 +128,13 @@ li.menu-item-open-left:hover > ul {
     margin-bottom: 5px;
     padding-top: 5px;
 }
+p.site-description {
+    font-size: 12px;
+    line-height: 1rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #B18860;
+}
 
 /* header section
 ***************************/
@@ -191,6 +199,7 @@ li.menu-item-open-left:hover > ul {
     left: auto;
     background: #D21437;
     padding: 10px;
+    z-index: 999999;
 }
 .header-widget:hover .widget-header-content {
     display: block;
