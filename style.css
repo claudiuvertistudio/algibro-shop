@@ -5,7 +5,7 @@ Author:         ThemeIsle
 Author URI:     http://themeisle.com/
 Template:       azera-shop
 Description:    Algibro Shop is an elegant free WordPress child theme, perfect for building an online store. Algibro Shop is ecommerce (WooCommerce) Compatible, Easy Digital Downloads, WPML, RTL, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes.
-Version:        1.0.0
+Version:        1.0.1
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    algibro-shop
@@ -53,6 +53,19 @@ a:hover {
 
 /* header
 ***************************/
+#menu-primary {
+    padding: 0;
+    margin: 0;
+}
+.navbar-inverse button#menu-toggle:hover, 
+.navbar-inverse button#menu-toggle:focus {
+    background: none;
+}
+.navbar-inverse button#menu-toggle:hover .icon-bar, 
+.navbar-inverse button#menu-toggle:focus .icon-bar {
+    background-color: #C50E30;
+
+}
 .sticky-navigation {
     background: #2a2621;
 }
@@ -62,6 +75,7 @@ a:hover {
     font-size: 12px;
     color: #B18860;
     letter-spacing: 1px;
+    padding: 26px 18px;
 }
 .sticky-navigation .main-navigation li:hover,
 .sticky-navigation .main-navigation li a:hover {
@@ -334,12 +348,28 @@ p.site-description {
     font-weight: 300;
     font-size: 60px;
     color: #FFFCFA;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    float: left;
+    width: 100%;
+    text-align: center;
 }
 .intro-section h5 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-size: 30px;
     color: #FFFCFA;
+}
+.header-style-one .intro-section h5, 
+.second-header-layout .intro-section h5 {
+    font-size: 30px;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.header-style-one .intro-section {
+    margin-top: 45px;
 }
 .section-header h2,
 .brief h2 {
@@ -391,7 +421,6 @@ p.site-description {
 .home-shop-product-info {
     height: 350px;
     position: absolute;
-    top: 350px;
     padding: 10px;
     height: 100%;
     background: rgba(42, 38, 33, 0.8);
@@ -462,6 +491,16 @@ p.site-description {
 }
 .home-shop-product-wrap:hover .home-shop-product-price {
     padding-right: 10px;
+}
+.home-shop-product-title h3 {
+    padding: 0
+}
+.home-shop-product-price del {
+    font-size: 13px;
+    line-height: 8px;
+}
+.home-shop-product-price ins {
+    margin-bottom: -5px;  
 }
 
 /* our story
@@ -631,7 +670,6 @@ footer.footer .widget_search .search-form:hover:before {
 	color: #D21437;
 }
 footer.footer .widget_search .search-form:before {
-    content: "\e0a6";
     font-size: 23px;
     top: 8px;
 }
@@ -761,6 +799,7 @@ a.post-comments {
 .post-author i,
 .posted-in i,
 .post-comments i {
+    top: 2px;
     color: #2A2621;
 }
 .post-comments i {
@@ -859,7 +898,6 @@ h1.single-title {
 	color: #D21437;
 }
 .widget_search .search-form:before {
-    content: "\e0a6";
     font-size: 23px;
     top: 8px;
 }
@@ -880,6 +918,7 @@ h1.single-title {
 	color: #B18860;
 }
 .post-time i {
+    top: 2px;
 	color: #2A2621;
 }
 .content-single-page .post-author a:hover, 
@@ -1393,9 +1432,9 @@ h1.single-title {
 @media (min-width: 768px) {
 
     .main-navigation .menu-item-has-children > a:after {
-        content: "\e0d4";
-        font-family: stamp-icons!important;
-        position: absolute;
+        content: "\f107";
+        font-family: FontAwesome;
+        position: absolute !important;
         top: 23px;
         right: 16px;
         z-index: -1;
