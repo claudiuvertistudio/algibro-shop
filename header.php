@@ -29,7 +29,7 @@
 	 
 		$azera_shop_disable_preloader = get_theme_mod('paralax_one_disable_preloader');
 		
-		if( isset($azera_shop_disable_preloader) && ($azera_shop_disable_preloader != 1)):
+		if( isset($azera_shop_disable_preloader) && ($azera_shop_disable_preloader !== true)):
 			 
 			echo '<div class="preloader">';
 				echo '<div class="status">&nbsp;</div>';
@@ -48,8 +48,8 @@
 
         <!-- COLOR OVER IMAGE -->
         <?php
-			$paralax_one_sticky_header = get_theme_mod('paralax_one_sticky_header','azera-shop');
-			if( isset($paralax_one_sticky_header) && ($paralax_one_sticky_header != 1)){
+			$paralax_one_sticky_header = get_theme_mod('paralax_one_sticky_header',false);
+			if( isset($paralax_one_sticky_header) && ($paralax_one_sticky_header !== true)){
 				$fixedheader = 'sticky-navigation-open';
 			} else {
 				if( !is_page_template('template-frontpage.php') ){
