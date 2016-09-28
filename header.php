@@ -22,22 +22,20 @@
      PRE LOADER       
     ============================== -->
 	<?php
-		
-	 global $wp_customize;
 
-	 if( !isset( $wp_customize ) && is_page_template('template-frontpage.php') ):
-	 
-		$azera_shop_disable_preloader = get_theme_mod('paralax_one_disable_preloader');
-		
-		if( isset($azera_shop_disable_preloader) && ($azera_shop_disable_preloader !== true)):
-			 
+	if( !is_customize_preview() && is_page_template('template-frontpage.php') ) {
+
+		$azera_shop_disable_preloader = get_theme_mod('azera_shop_disable_preloader');
+
+		if( isset($azera_shop_disable_preloader) && ($azera_shop_disable_preloader != 1)) {
+
 			echo '<div class="preloader">';
-				echo '<div class="status">&nbsp;</div>';
+			echo '<div class="status">&nbsp;</div>';
 			echo '</div>';
-			
-		endif;	
 
-	endif; ?>
+		}
+
+	} ?>
 
 
 	<!-- =========================
