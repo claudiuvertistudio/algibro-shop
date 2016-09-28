@@ -1,9 +1,9 @@
 <!-- CONTAINER -->
 <?php
 	$paralax_one_header_logo = get_theme_mod('paralax_one_header_logo', azera_shop_get_file('/images/logo-2.png'));
-	$azera_shop_header_title = get_theme_mod('azera_shop_header_title',esc_html__('Algibro Shop','azera-shop'));
-	$azera_shop_header_subtitle = get_theme_mod('azera_shop_header_subtitle',esc_html__('From the creators of the popular Zerif Lite meet the new ecommerce theme','azera-shop'));
-	$azera_shop_header_button_text = get_theme_mod('azera_shop_header_button_text',esc_html__('GET STARTED','azera-shop'));
+	$azera_shop_header_title = get_theme_mod('azera_shop_header_title',esc_html__('Algibro Shop','algibro-shop'));
+	$azera_shop_header_subtitle = get_theme_mod('azera_shop_header_subtitle',esc_html__('From the creators of the popular Zerif Lite meet the new ecommerce theme','algibro-shop'));
+	$azera_shop_header_button_text = get_theme_mod('azera_shop_header_button_text',esc_html__('GET STARTED','algibro-shop'));
 	$azera_shop_header_button_link = get_theme_mod('azera_shop_header_button_link','#');
 	$azera_shop_enable_move = get_theme_mod('paralax_one_enable_move', false);
 	$azera_shop_first_layer = get_theme_mod('paralax_one_first_layer', azera_shop_get_file('/images/background1.png'));
@@ -80,12 +80,12 @@
 							<?php
 								if( !empty($azera_shop_header_button_text) ){
 									if( empty($azera_shop_header_button_link) ){
-										echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop').esc_html($azera_shop_header_button_text).'</span>'.wp_kses_post($azera_shop_header_button_text).'</button>';
+										echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll"><span class="screen-reader-text">'.esc_html__('Header button label:','algibro-shop').esc_html($azera_shop_header_button_text).'</span>'.wp_kses_post($azera_shop_header_button_text).'</button>';
 									} else {
 										if(strpos($azera_shop_header_button_link, '#') === 0) {
-											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" data-anchor="'.esc_attr($azera_shop_header_button_link).'"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop').esc_html($azera_shop_header_button_text).'</span>'.wp_kses_post($azera_shop_header_button_text).'</button>';
+											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" data-anchor="'.esc_attr($azera_shop_header_button_link).'"><span class="screen-reader-text">'.esc_html__('Header button label:','algibro-shop').esc_html($azera_shop_header_button_text).'</span>'.wp_kses_post($azera_shop_header_button_text).'</button>';
 										} else {
-											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" onClick="parent.location=\''.esc_url($azera_shop_header_button_link).'\'"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop').esc_html($azera_shop_header_button_text).'</span>'.wp_kses_post($azera_shop_header_button_text).'</button>';
+											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" onClick="parent.location=\''.esc_url($azera_shop_header_button_link).'\'"><span class="screen-reader-text">'.esc_html__('Header button label:','algibro-shop').esc_html($azera_shop_header_button_text).'</span>'.wp_kses_post($azera_shop_header_button_text).'</button>';
 										}
 									}
 								} elseif ( isset( $wp_customize )   ) {

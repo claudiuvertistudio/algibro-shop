@@ -17,7 +17,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" <?php body_class(); ?> dir="<?php if (is_rtl()) echo "rtl"; else echo "ltr"; ?>">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'azera-shop' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'algibro-shop' ); ?></a>
 	<!-- =========================
      PRE LOADER       
     ============================== -->
@@ -85,7 +85,7 @@
                         <!-- LOGO -->
 						
                         <button title='<?php _e( 'Toggle Menu', 'algibro-shop' ); ?>' aria-controls='menu-main-menu' aria-expanded='false' type="button" class="navbar-toggle menu-toggle" id="menu-toggle" data-toggle="collapse" data-target="#menu-primary">
-                            <span class="screen-reader-text"><?php esc_html_e('Toggle navigation','azera-shop'); ?></span>
+                            <span class="screen-reader-text"><?php esc_html_e('Toggle navigation','algibro-shop'); ?></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -140,7 +140,7 @@
 
                     </div>
                     
-					<div itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="<?php esc_html_e('Primary Menu','azera-shop') ?>" id="menu-primary" class="navbar-collapse collapse">
+					<div itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="<?php esc_html_e('Primary Menu','algibro-shop') ?>" id="menu-primary" class="navbar-collapse collapse">
 						<!-- LOGO ON STICKY NAV BAR -->
 						<div id="site-header-menu" class="site-header-menu">
 
