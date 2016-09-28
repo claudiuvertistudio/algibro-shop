@@ -13,9 +13,6 @@ Tags:           grid-layout, two-columns, three-columns, right-sidebar, custom-b
 
 /* general
 ***************************/
-
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
-
 body {
     background-color: rgb(255, 252, 250);
 }
