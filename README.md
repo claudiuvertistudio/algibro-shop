@@ -5,12 +5,6 @@
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License.
 The exceptions to this license are as follows:
 
-
-#####Bootstrap v3.3.6 (http://getbootstrap.com)
- Copyright 2011-2015 Twitter, Inc.
- 
- Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-
 #####Glyphicons
  Licensed under Creative Commons Attribution 3.0 Unported (CC BY 3.0)
 

@@ -5,7 +5,6 @@ function algibro_shop_enqueue_styles() {
 	wp_enqueue_style( 'algibro_shop-font', algibro_shop_fonts_url(), array(), null );
 	wp_enqueue_style( 'algibro_shop-style',  get_template_directory_uri() . '/style.css', array(),'1.0.0');
 	wp_enqueue_script( 'algibro_shop-custom-js', get_stylesheet_directory_uri() . '/js/custom-script.js', array('jquery'), '1.0.0', true );
-	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/css/bootstrap.min.css' );
 }
 
 function algibro_shop_customize_register( $wp_customize ) {
