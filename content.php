@@ -33,12 +33,12 @@
 				} ?>
 
 			</a>
-			<div class="parallax-one-post-meta" itemprop="datePublished" datetime="<?php the_time( 'Y-m-d\TH:i:sP' ); ?>" title="<?php the_time( _x( 'l, F j, Y, g:i a', 'post time format', 'azera-shop' ) ); ?>">
+			<div class="parallax-one-post-meta" itemprop="datePublished" datetime="<?php the_time( 'Y-m-d\TH:i:sP' ); ?>" title="<?php the_time( _x( 'l, F j, Y, g:i a', 'post time format', 'algibro-shop' ) ); ?>">
 				<?php the_time( get_option('date_format') ); ?>
 			</div>
 			<div class="post-date entry-published updated">
-				<span class="post-date-day"><?php the_time( _x( 'd', 'post day fomat', 'azera-shop') ); ?></span>
-				<span class="post-date-month"><?php the_time( _x( 'M', 'post month fomat', 'azera-shop') ); ?></span>
+				<span class="post-date-day"><?php the_time( _x( 'd', 'post day fomat', 'algibro-shop') ); ?></span>
+				<span class="post-date-month"><?php the_time( _x( 'M', 'post month fomat', 'algibro-shop') ); ?></span>
 			</div>
 		</div>
 
@@ -49,10 +49,10 @@
 					</span>
 				</span>
 			<span class="posted-in entry-terms-categories">
-					<i class="fa fa-folder-open-o" aria-hidden="true"></i><?php _e('Posted in','azera-shop'); ?>
+					<i class="fa fa-folder-open-o" aria-hidden="true"></i><?php _e('Posted in','algibro-shop'); ?>
 				<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( esc_html__( ', ', 'azera-shop' ) );
+				$categories_list = get_the_category_list( esc_html__( ', ', 'algibro-shop' ) );
 				$pos = strpos($categories_list, ',');
 				if ( $pos ) {
 					echo substr($categories_list, 0, $pos);
@@ -62,7 +62,7 @@
 				?>
 				</span>
 			<a href="<?php comments_link(); ?>" class="post-comments">
-				<i class="fa fa-comment-o" aria-hidden="true"></i><?php comments_number( esc_html__('No comments','azera-shop'), esc_html__('One comment','azera-shop'), esc_html__('% comments','azera-shop') ); ?>
+				<i class="fa fa-comment-o" aria-hidden="true"></i><?php comments_number( esc_html__('No comments','algibro-shop'), esc_html__('One comment','algibro-shop'), esc_html__('% comments','algibro-shop') ); ?>
 			</a>
 		</div><!-- .entry-meta -->
 
@@ -74,14 +74,14 @@
 	<div itemprop="description" class="entry-content entry-summary">
 		<?php
 		$ismore = @strpos( $post->post_content, '<!--more-->');
-		if($ismore) : the_content( sprintf( esc_html__('Read more %s &#8230;','azera-shop'), '<span class="screen-reader-text">' . esc_html__('about ', 'azera-shop') . esc_html( get_the_title() ) .'</span>' ) );
+		if($ismore) : the_content( sprintf( esc_html__('Read more %s &#8230;','algibro-shop'), '<span class="screen-reader-text">' . esc_html__('about ', 'algibro-shop') . esc_html( get_the_title() ) .'</span>' ) );
 		else : the_excerpt();
 		endif;
 		?>
 
 		<?php
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'azera-shop' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'algibro-shop' ),
 			'after'  => '</div>',
 		) );
 		?>
