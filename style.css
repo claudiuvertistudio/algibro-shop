@@ -9,13 +9,10 @@ Version:        1.0.1
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    algibro-shop
-Tags:           brown, red, gray, white, orange, light, responsive-layout, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, front-page-post-form, full-width-template, rtl-language-support, threaded-comments, translation-ready, accessibility-ready
+Tags:           grid-layout, two-columns, three-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, translation-ready, blog, e-commerce, portfolio
 
 /* general
 ***************************/
-
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
-
 body {
     background-color: rgb(255, 252, 250);
 }
@@ -173,9 +170,7 @@ p.site-description {
     display: table-cell; 
     vertical-align: middle;
 }
-#site-navigation {
-    float: right;
-}
+
 #header-sidebar {
     float: right;
     margin: 0;
@@ -330,9 +325,7 @@ p.site-description {
 .header-widget.widget_edd_cart_widget .edd-cart li.edd_total {
     color: #FFF;
 }
-.site-header-menu {
-    float: right;
-}
+
 .woocommerce span.onsale {
     background: #B18860;
 }
@@ -1424,6 +1417,29 @@ h1.single-title {
 }
 .woocommerce .products .product .star-rating {
     margin-top: 0;
+}
+
+.home-shop-product-content {
+    margin-top: 10px;
+}
+
+.header-search-button, .navbar-cart-inner .fa {
+    color: #B18860;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #B18860;
+}
+
+.header-search-button:hover,
+.navbar-cart-inner .fa:hover,
+.header-search:hover .header-search-button,
+.header-search:hover .header-search-button,
+.navbar-cart-inner:hover .fa {
+    color: #D21437;
+}
+
+.navbar-cart-inner .cart-item-number{
+    background-color: #D21437;
 }
 
 /* responsive
