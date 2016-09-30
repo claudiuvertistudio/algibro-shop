@@ -12,20 +12,6 @@ function algibro_shop_customize_register( $wp_customize ) {
 
 	$wp_customize->get_setting( 'azera_shop_header_title' )->default = esc_html__('Algibro Shop','algibro-shop');
 
-	$post_image_placeholder = $wp_customize->get_setting( 'azera_shop_post_image_placeholder' );
-	if( empty($post_image_placeholder) ){
-		$wp_customize->add_setting( 'azera_shop_post_image_placeholder', array(
-			'default' => azera_shop_get_file('/images/no-thumbnail.jpg'),
-			'sanitize_callback' => 'esc_url'
-		));
-
-		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'azera_shop_post_image_placeholder', array(
-			'label'    => esc_html__( 'Post image placeholder', 'algibro-shop' ),
-			'section'  => 'azera_shop_general_section',
-			'priority'    => 8
-		)));
-	}
-
 	$wp_customize->add_setting( 'azera_shop_big_title_logo', array(
 		'default' => azera_shop_get_file('/images/logo-2.png'),
 		'sanitize_callback' => 'esc_url'
