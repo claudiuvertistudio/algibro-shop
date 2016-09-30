@@ -10,8 +10,6 @@ function algibro_shop_enqueue_styles() {
 function algibro_shop_customize_register( $wp_customize ) {
 	$wp_customize->remove_control('azera_shop_header_layout');
 
-	$wp_customize->get_setting( 'azera_shop_header_title' )->default = esc_html__('Algibro Shop','algibro-shop');
-
 	$wp_customize->add_setting( 'azera_shop_big_title_logo', array(
 		'default' => azera_shop_get_file('/images/logo-2.png'),
 		'sanitize_callback' => 'esc_url'

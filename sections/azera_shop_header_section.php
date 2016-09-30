@@ -1,8 +1,10 @@
 <!-- CONTAINER -->
 <?php
+$azera_website_name = get_bloginfo( 'name', 'display' );
+$azera_website_description = get_bloginfo( 'description' );
 $azera_shop_big_title_logo = get_theme_mod('azera_shop_big_title_logo', azera_shop_get_file('/images/logo-2.png'));
-$azera_shop_header_title = get_theme_mod('azera_shop_header_title',esc_html__('Algibro Shop','algibro-shop'));
-$azera_shop_header_subtitle = get_theme_mod('azera_shop_header_subtitle',esc_html__('From the creators of the popular Zerif Lite meet the new ecommerce theme','algibro-shop'));
+$azera_shop_header_title = get_theme_mod('azera_shop_header_title', $azera_website_name);
+$azera_shop_header_subtitle = get_theme_mod('azera_shop_header_subtitle', $azera_website_description);
 $azera_shop_header_button_text = get_theme_mod('azera_shop_header_button_text',esc_html__('GET STARTED','algibro-shop'));
 $azera_shop_header_button_link = get_theme_mod('azera_shop_header_button_link','#');
 $azera_shop_enable_move = get_theme_mod('azera_shop_enable_move');
