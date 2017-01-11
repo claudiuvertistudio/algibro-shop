@@ -14,22 +14,22 @@ $azera_shop_second_layer = get_theme_mod('azera_shop_second_layer',azera_shop_ge
 if(!empty($azera_shop_big_title_logo) || !empty($azera_shop_header_title) || !empty($azera_shop_header_subtitle) || !empty($azera_shop_header_button_text)){ ?>
 	<div class="header-section-inner-wrap">
 		<?php
-		if( isset($azera_shop_enable_move) && $azera_shop_enable_move !== true ) {
-
-			echo '<ul id="parallax_move">';
-				if ( empty($azera_shop_first_layer) && empty($azera_shop_second_layer) ) {
-					$azera_shop_header_image2 = get_header_image();
-					echo '<li class="layer layer1" data-depth="0.10" style="background-image: url('.$azera_shop_header_image2.');"></li>';
-				} else {
-					if( !empty($azera_shop_first_layer) )  {
-						echo '<li class="layer layer1" data-depth="0.10" style="background-image: url('.esc_url($azera_shop_first_layer).');"></li>';
-					}
-					if( !empty($azera_shop_second_layer) ) {
-						echo '<li class="layer layer2" data-depth="0.20" style="background-image: url('.esc_url($azera_shop_second_layer).');"></li>';
-					}
+		if ( ! empty( $azera_shop_enable_move ) && $azera_shop_enable_move ) {
+			echo '<ul id="azera_shop_move">';
+			if ( empty( $azera_shop_first_layer ) && empty( $azera_shop_second_layer ) ) {
+				$azera_shop_header_image2 = get_header_image();
+				echo '<li class="layer layer1" data-depth="0.10" style="background-image: url(' . $azera_shop_header_image2 . ');"></li>';
+			} else {
+				if ( ! empty( $azera_shop_first_layer ) ) {
+					echo '<li class="layer layer1" data-depth="0.10" style="background-image: url(' . $azera_shop_first_layer . ');"></li>';
 				}
+				if ( ! empty( $azera_shop_second_layer ) ) {
+					echo '<li class="layer layer2" data-depth="0.20" style="background-image: url(' . $azera_shop_second_layer . ');"></li>';
+				}
+			}
 			echo '</ul>';
-		} ?>
+		}
+		?>
 
 		<div class="overlay-layer-wrap">
 			<div class="container overlay-layer" id="parallax_header">
